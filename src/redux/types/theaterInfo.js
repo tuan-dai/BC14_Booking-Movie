@@ -1,0 +1,1 @@
+export const THEATER_INFO = 'THEATER_INFO'

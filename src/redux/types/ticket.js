@@ -1,0 +1,3 @@
+export const CREATE_SHOWTIME = 'CREATE_SHOWTIME'
+
+export const BOOKING_TICKET = 'BOOKING_TICKET'

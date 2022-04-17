@@ -1,0 +1,11 @@
+export const GET_LISTFILM_REQUEST = 'GET_LISTFILM_REQUEST'
+export const GET_LISTFILM_SUCCESS = 'GET_LISTFILM_SUCCESS'
+export const GET_LISTFILM_ERROR = 'GET_LISTFILM_ERROR'
+
+export const DELETE_FILM = 'DELETE_FILM'
+
+export const SEARCH_FILM = 'SEARCH_FILM'
+
+export const ADD_FILM = 'ADD_FILM'
+
+export const EDIT_FILM = 'EDIT_FILM'
