@@ -4,7 +4,6 @@ import { getDetailFilm } from '../../../redux/actions/filmInfo'
 import StarIcon from '@mui/icons-material/Star';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
-import { BsPlayCircleFill } from 'react-icons/bs'
 import moment from 'moment'
 import { NavLink } from 'react-router-dom'
 import DetailShowtime from './DetailShowtime';
@@ -30,11 +29,8 @@ export default function FilmDetail(props) {
             </nav>
 
             <div className='row '>
-                <div className='col-12 col-sm-12 col-md-12 col-lg-4'>
-                    <button className='absolute z-10 hover:text-gray-900 xs:hidden md:block
-                    left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 focus:outline-none'
-                        onClick={() => setVisible(true)} >
-                        <BsPlayCircleFill className='text-7xl text-gray-900 border rounded-full border-white opacity-90 hover:opacity-50' /></button>
+                <div className='col-12 col-sm-12 col-md-12 col-lg-4 relative'>
+                    <div className='play-icon' onClick={() => setVisible(true)}></div>
 
                     {/* MODAL */}
                     <Modal
@@ -46,8 +42,8 @@ export default function FilmDetail(props) {
                         visible={visible}
                         width={1000}
                     >
-                        <div className='iframe-container'>
-                            <iframe src={filmInfo?.trailer}
+                        <div className='iframe-container'>                           
+                            <iframe src="https://www.youtube.com/watch?v=QYEhSObq4PU&ab_channel=MarvelAustralia%26NewZealand"
                                 frameborder='0'
                                 allow='autoplay; encrypted-media'
                                 allowfullscreen

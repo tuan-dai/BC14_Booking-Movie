@@ -9,7 +9,7 @@ api.interceptors.request.use(
     (config) => {
         config.headers = {
             ...config.headers,
-            TokenCybersoft: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5Mb3AiOiJCb290Y2FtcCAxNCIsIkhldEhhblN0cmluZyI6IjE1LzA0LzIwMjIiLCJIZXRIYW5UaW1lIjoiMTY0OTk4MDgwMDAwMCIsIm5iZiI6MTYyMTE4NDQwMCwiZXhwIjoxNjUwMTI4NDAwfQ.43sCqLD_V6VUJP8qZLQSWO07uCIDI7bS5MGR92deYb8',
+            TokenCybersoft: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5Mb3AiOiJCb290Y2FtcCAyOCIsIkhldEhhblN0cmluZyI6IjA2LzA0LzIwMjMiLCJIZXRIYW5UaW1lIjoiMTY4MDczOTIwMDAwMCIsIm5iZiI6MTY0Nzk2ODQwMCwiZXhwIjoxNjgwODg2ODAwfQ.xX_epWJgLPS900gCFif08GWmsOKj-2It-grKojlOHmY',
             Authorization: userInfo ? 'bearer ' + JSON.parse(userInfo).accessToken : ''
         }
         return config

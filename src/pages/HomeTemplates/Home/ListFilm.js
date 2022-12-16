@@ -44,7 +44,7 @@ export default function ListFilm() {
             return <div key={film.maPhim} className='col-sm-6 col-md-6 col-lg-3 mb-5 relative'>
                 <NavLink style={{ textDecoration: 'none' }} to={`/detail/${film.maPhim}`} className='now-showing flex justify-center items-center'>
                     <button className='border text-white py-2 px-4 hover:border-green-500
-                     hover:bg-green-500 focus:outline-none'>MUA VÉ</button>
+                     hover:bg-orange-500 focus:outline-none'>MUA VÉ</button>
                 </NavLink>
                 <div>
                     <img style={{ width: '15rem', height: '22rem' }} className='object-cover' src={film.hinhAnh} alt='film.tenPhim' />
@@ -61,6 +61,7 @@ export default function ListFilm() {
                     <div className='row'>
                         {renderFilmNowShowing()}
                     </div>
+                    
                 </TabPane>
                 <TabPane tab="PHIM SẮP CHIẾU" key="2">
                     <div className='row'>

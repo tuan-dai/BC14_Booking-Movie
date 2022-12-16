@@ -112,7 +112,7 @@
 }
 
 .choosing-seat {
-  background: yellow;
+  background: yellow !important;
   color: red;
 }
 .seat-booked {
@@ -177,4 +177,64 @@
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+/* CAROUSEL */
+.image-carousel {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+.slick-dots {
+  bottom: 30px !important;
+}
+.slick-dots--custom {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.arrow-btn {
+  position: absolute;
+  top: 45%;
+  z-index: 10;
+  font-size: 4rem;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.767) !important;
+}
+.next {
+  right: 20px;
+}
+.prev {
+  left: 20px;
+}
+
+/* FILM DETAIL */
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(27, 27, 27, 0.87);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+  border: 1px solid white;
+}
+.play-icon:hover {
+  background: rgba(19, 19, 19, 0.925);
+}
+.play-icon::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+
+  border-style: solid;
+  border-width: 15px 0 15px 22px;
+  border-color: transparent transparent transparent white;
 }

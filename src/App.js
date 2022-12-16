@@ -1,6 +1,8 @@
 import './App.css';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import "../node_modules//slick-carousel/slick/slick.css";
+import "../node_modules//slick-carousel/slick/slick-theme.css";
 
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import PageNotFound from './pages/PageNotFound/PageNotFound'
 import AdminTemplate from './templates/AdminTemplate';
 import Dashboard from './pages/AdminTemplates/Dashboard/Dashboard'

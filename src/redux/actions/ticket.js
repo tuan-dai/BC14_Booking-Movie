@@ -1,5 +1,6 @@
 import api from "../../util/apiUtil";
 import *as ActionType from '../types/ticket'
+import {openNotificationWithIcon} from '../../pages/_components/Notification'
 
 // CREATE SHOWTIME
 export const createShowtime = (showtime, history) => {
@@ -20,10 +21,13 @@ export const bookingTicket = (listTicket, history) => {
         api
             .post('QuanLyDatVe/DatVe', listTicket)
             .then(result => {
-                dispatch(actBookingTicket(result.data.content))
-                history.push('/')
+                if(result.status === 200) {
+                    dispatch(actBookingTicket(result.data.content))
+                    openNotificationWithIcon('success', 'Đặt vé thành công') 
+                    history.push('/')
+                }
             })
-            .catch(error => console.log(error))
+            .catch(error => openNotificationWithIcon('error', 'Vui lòng đăng nhập'))
     }
 }
 

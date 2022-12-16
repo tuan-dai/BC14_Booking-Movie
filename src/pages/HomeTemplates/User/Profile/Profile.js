@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { Tabs } from 'antd';
-import Slider from '../../Home/Slider'
+import Carousel from '../../Home/Carousel'
 import Loading from '../../../_components/Loading/Loading'
 import { getUserInfo } from '../../../../redux/actions/userInfo'
 import UserInfo from './UserInfo';
@@ -23,7 +23,7 @@ export default function Profile() {
     return (
         <div>
             {loading ? <Loading /> : ''}
-            <Slider />
+            <Carousel />
             <div style={{ width: '70%' }} className='mx-auto my-8'>
                 <Tabs type="card">
                     <TabPane tab="THÔNG TIN CÁ NHÂN" key="1">

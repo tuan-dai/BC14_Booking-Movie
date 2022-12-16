@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { IoPersonSharp, IoPersonOutline, IoSearchOutline } from 'react-icons/io5';
 import { AiOutlineLogout } from 'react-icons/ai'
 import MenuIcon from '@mui/icons-material/Menu';
-import { Menu, Dropdown, Button } from 'antd';
+import { Menu, Dropdown } from 'antd';
 import { NavLink } from 'react-router-dom';
 
 export default function Header() {
@@ -26,7 +26,9 @@ export default function Header() {
         <header>
             {/* TOP */}
             <div style={{ width: '70%' }} className='header-content xs:px-3 mx-auto py-2 flex justify-between items-center'>
-                <NavLink to='/'><img className='xs:w-40 lg:w-72' src='./img/logo-cybersoft.png' alt='logo' /></NavLink>
+                <NavLink to='/'>
+                    <img className='xs:w-40 lg:w-72' src='./img/logo-cybersoft.png' alt='logo' />
+                </NavLink>
 
                 <div className='xs:hidden lg:inline-flex flex items-center relative'>
                     <input className='w-72 border focus:outline-slate-300 py-1 px-2' type='text' placeholder='Tìm tên phim, diễn viên...' />
